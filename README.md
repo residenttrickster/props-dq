@@ -1,10 +1,12 @@
-# Discussion Question: Declarative Programming
+# Discussion Question: Declarative Programming and JSX
+
+
+### Declarative Programming
 
 In this repository is an `index.html` file with some pre-written HTML. Open this file in your browser and discuss the following:
 
-1. Looking at the page in the browser, discuss which parts of the page look repeatable.
-2. Looking now at the HTML, discuss which bits of the HTML are repeatable.
-3. If you were to abstract out the repeatable portions of the given HTML, which bits would remain static and which would need to be dynamic?
+1. Looking at the page in the browser, discuss which parts of the page look repeatable. Now looking at the HTML, discuss which bits of the HTML are repeatable.
+2. If you were to abstract out the repeatable sections, which bits would remain static and which would need to be dynamic? In other words, which parts of the HTML are always the same (static) and which parts are unique to each section (dynamic)?
 
 ex:
 ```HTML
@@ -17,7 +19,7 @@ ex:
 <h1><!-- INSERT GREETING HERE -->!</h1>
 ```
 
-4. Create an array to store data in a way that mirrors the dynamic portions of the data
+3. Eventually real data will be used in this application. Considering that you have many repeating sections of your page and that each section has various **properties** which need to be filled in, how might your data be structured?
 
 ex: 
 ```HTML
@@ -36,17 +38,15 @@ let greetings = [
   {phrase: "Goodbye"},
   {phrase: "Whoa"}
 ]
+// at a minumum, each h1 needs to know what phrase to print as a greeting
 ```
 
-
-
+### JSX
 There is another file in this repository called `index-react.html` with some pre-written HTML and JSX that, in the browser, looks identical. Discuss the following:
 
-5. What is different about the pure HTML written in `index.html` and the mix of HTML and JSX written in `index-react.html`? What is the same?
+4. What is different about the pure HTML written in `index.html` and the mix of HTML and JSX written in `index-react.html`? What is the same?
 
-**Bonus:**
-
-6. Try writing your own component using JSX to create the abstracted HTML you created in step 3.
+5. Try writing your own component using JSX to create the abstracted HTML you created in step 2.
 
 ex: 
 ```jsx
@@ -64,7 +64,7 @@ ReactDOM.render(
 )
 ```
 
-7. Using the array you created in step 4, try to operate on that array to create programmatically create your JSX
+6. Using the array you created in step 3, try to operate on that array to create programmatically create your JSX
 
 ex: 
 ```jsx
@@ -86,4 +86,4 @@ ReactDOM.render(
 )
 ```
 
-8. If you got through step 7, try adding additional data to your data structure. What happens in the browser? What is the correlation between the data and the DOM? Given this correlation, what would be an easy way to add, remove, or update information on the DOM?
+7. If you got through step 6, try adding additional rows of data to your array. What happens in the browser? What is the correlation between the data and the DOM? Given this correlation, what would be an easy way to add, remove, or update information on the DOM?
