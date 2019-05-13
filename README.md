@@ -64,7 +64,7 @@ ReactDOM.render(
 )
 ```
 
-6. Using the array you created in step 3, try to operate on that array to create programmatically create your JSX
+6. Using the array you created in step 3, try to operate on that array to programmatically create your JSX
 
 ex: 
 ```jsx
