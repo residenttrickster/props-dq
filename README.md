@@ -86,4 +86,6 @@ ReactDOM.render(
 )
 ```
 
+note: JSX can render not only individual JSX elements, but *arrays* of JSX elements as well. Consider the above call to `greetings.map`: `map` will return an array containing `Greeting` components. These components will render in that order.
+
 7. If you got through step 6, try adding additional rows of data to your array. What happens in the browser? What is the correlation between the data and the DOM? Given this correlation, what would be an easy way to add, remove, or update information on the DOM?
