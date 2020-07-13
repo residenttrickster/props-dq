@@ -14,6 +14,26 @@
 
       // Write your component here!!
 
+let data = {
+  id:5,
+  img:"https://images.unsplash.com/photo-1496196614460-48988a57fccf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80",
+  name:"Ninja",
+  age:5
+}
+
+const Card = (props) => {
+  return(
+    <div className="card" id={props.id}>
+    <img src={props.img} alt="${props.name}"/>
+    <h2>Name: {props.name}</h2>
+    <h4>Age: {props.age}</h4>
+    </div>
+  )
+}
+  
+
+
+
       ReactDOM.render(
         <div className="card-container">
           <div className="card" id="1">
